@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <link rel="icon" type="images/png" href="../logos/png/logoSolo_oscuro.png">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.cdnfonts.com/css/keystone-2?styles=145910" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/reserva.css">
+        
+        <script src="../js/validacion-formulario.js"></script>
+
+        <title>Reservar - Iberostar Hoteles</title>
+    </head>
+
+    <body>
+        <div id="encabezado">
+            <header class="navegador" id="barra_navegador">
+                <a href="../index.html">
+                    <img id="logoGrande" src="../logos/png/logoReducido_oscuro_sinFondo.png"
+                        alt="Logo mediano de la compañía con el nombre de la compañía">
+                    <img id="logoPequeño" src="../logos/png/logoSolo_oscuro_sinFondo.png" alt="Logo de la compañía">
+                </a>
+                <nav id="bloque_enlaces">
+                    <a class="cabecera_enlace" href="../index.html">
+                        Inicio
+                    </a>
+                    <a class="cabecera_enlace" href="./habitaciones.html">
+                        Habitaciones
+                    </a>
+                    <a class="cabecera_enlace_actual" href="./reserva.html">
+                        Reserva
+                    </a>
+                    <a class="cabecera_enlace" href="./informacion.html">
+                        Quienes somos
+                    </a>
+                </nav>
+            
+            </header>
+            
+            <header class="navegador" id="barra_navegador_2">
+                <div id="cajon">
+                    <a id="enlaceImg" href="../index.html">
+                        <img id="logoPequeño2" src="../logos/png/logoSolo_oscuro_sinFondo.png" alt="Logo de la compañía">
+                    </a>
+                    <nav id="menu_enlaces">
+                        <label class="cabeceraMenu" for="menu-toggle">Menú</label>
+                        <input type="checkbox" id="menu-toggle">
+                        <ul id="menu">
+                            <li>
+                                <a class="cabecera_enlace" href="../index.html">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a class="cabecera_enlace" href="./habitaciones.html">
+                                    Habitaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a class="cabecera_enlace_actual" href="./reserva.html">
+                                    Reserva
+                                </a>
+                            </li>
+                            <li>
+                                <a class="cabecera_enlace" href="./informacion.html">
+                                    Quienes somos
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <form id="formulario" action="#" onsubmit="return validarFormulario()">
+            <div id="reserva_main">
+                <div id="cajon_main">
+                    <div id="reserva_seccionDatos">
+                        <section class="tarjeta">
+                            <h2 class="cabeceraSeccion">Datos de la reserva</h2>
+                            <table>
+                                <tr>
+                                    <th><p class="campo">Ciudad</p></th>
+                                    <th>
+                                        <label hidden for="ciudad">ciudad</label>
+                                        <select class="cajaDatos" name="ciudad" id="ciudad">
+                                            <option value="Madrid">
+                                                Madrid
+                                            </option>
+                                            <option value="París">
+                                                Paris
+                                            </option>
+                                            <option value="Berlín">
+                                                Berlín
+                                            </option>
+                                            <option value="Nueva York">
+                                                Nueva York
+                                            </option>
+                                            <option value="Los Ángeles">
+                                                Los Ángeles
+                                            </option>
+                                            <option value="Buenos Aires">
+                                                Buenos Aires
+                                            </option>
+                                            <option value="Tokio">
+                                                Tokio
+                                            </option>
+                                        </select>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Tipo de habitación</p></th>
+                                    <th>
+                                        <label hidden for="tipo_habitacion">tipo_habitacion</label>
+                                        <select class="cajaDatos" name="tipo_habitacion" id="tipo_habitacion">
+                                            <option value="Suite">
+                                                Suite
+                                            </option>
+                                            <option value="Habitación">
+                                                Habitación
+                                            </option>
+                                            <option value="Check and go">
+                                                Check and go
+                                            </option>
+                                        </select>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Servicio</p></th>
+                                    <th>
+                                        <label hidden for="tipo_servicio">tipo_servicio</label>
+                                        <select class="cajaDatos" name="tipo_servicio" id="tipo_servicio">
+                                            <option value="ser_completo">
+                                                Completo
+                                            </option>
+                                            <option value="ser_media">
+                                                Media pensión
+                                            </option>
+                                            <option value="ser_none">
+                                                Ninguno
+                                            </option>
+                                        </select>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Fecha entrada</p></th>
+                                    <th>
+                                        <label hidden for="fechaIN">fechaIN</label>
+                                        <input class="cajaDatos" name="fechaIN" id="fechaIN" type="date">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Hora entrada</p></th>
+                                    <th>
+                                        <label hidden for="horaIN">horaIN</label>
+                                        <input class="cajaDatos" name="horaIN" id="horaIN" type="time" max="19:00" min="14:00">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Fecha salida</p></th>
+                                    <th>
+                                        <label hidden for="fechaOUT">fechaOUT</label>
+                                        <input class="cajaDatos" name="fechaOUT" id="fechaOUT" type="date">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Hora salida</p></th>
+                                    <th>
+                                        <label hidden for="horaOUT">horaOUT</label>
+                                        <input class="cajaDatos" name="horaOUT" id="horaOUT" type="time" max="13:00" min="09:00">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Número adultos</p></th>
+                                    <th>
+                                        <label hidden for="numAdultos">numAdultos</label>
+                                        <input class="cajaDatos" name="numAdultos" id="numAdultos" type="number" min="0">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Número niños</p></th>
+                                    <th>
+                                        <label hidden for="numNinos">numNinos</label>
+                                        <input class="cajaDatos" name="numNinos" id="numNinos" type="number" min="0">
+                                    </th>
+                                </tr>
+                            </table>
+                        </section>
+            
+                        <section class="tarjeta">
+                            <h2 class="cabeceraSeccion">Datos personales</h2>
+                            <table>
+                                <tr>
+                                    <th><p class="campo">Nombre</p></th>
+                                    <th>
+                                        <label hidden for="nombre">nombre</label>
+                                        <input class="cajaDatos" name="nombre" id="nombre" type="text">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Apellidos</p></th>
+                                    <th>
+                                        <label hidden for="apellidos">apellidos</label>
+                                        <input class="cajaDatos" name="apellidos" id="apellidos" type="text">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Documento de identidad</p></th>
+                                    <th>
+                                        <label hidden for="docIdn">docIdn</label>
+                                        <input class="cajaDatos" name="docIdn" id="docIdn" type="text">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Correo electrónico</p></th>
+                                    <th>
+                                        <label hidden for="correoE">correoE</label>
+                                        <input class="cajaDatos" name="correoE" id="correoE" type="email">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><p class="campo">Teléfono</p></th>
+                                    <th>
+                                        <label hidden for="telef">telef</label>
+                                        <input class="cajaDatos" name="telef" id="telef" type="tel">
+                                    </th>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+                    
+                    <div class="tarjeta" id="seccionFondo_precio">
+                        <button id="botonConfirmar" type="submit">
+                            Confirmar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <footer>
+            <div id="pie_bloqueEnlaces">
+                <div id="pie_bloque_IZQ">
+                    <h3 class="titulo_seccion">Direcciones sedes</h3>
+                    <h4 class="texto_claro">Madrid</h4>
+                    <p class="pie_texto">
+                        P.ª de la Castellana 259, 28046 Madrid
+                    </p>
+                    <h4 class="texto_claro">Nueva York</h4>
+                    <p class="pie_texto">
+                        285 Fulton St. New York, NY 10007
+                    </p>
+                    <h4 class="texto_claro">Tokyo</h4>
+                    <p class="pie_texto">
+                        4-chôme-2-8 Shinakoen, Minato City Tokyo 105-0011
+                    </p>
+                </div>
+                <div id="pie_bloque_CNT">
+                    <h3 class="titulo_seccion">Contacta con nosotros</h3>
+                    <h4 class="texto_claro">Español</h4>
+                    <p class="pie_texto">
+                        <a class="enlace_pie" href="tel:+34913630000">+34 91 363 00 00</a>
+                    </p>
+                    <p class="pie_texto">
+                        <a class="enlace_pie" href="mailto:atencionalusuario@iberostarhoteles.com">
+                            atencionalusuario@iberostarhoteles.com
+                        </a>
+                    </p>
+                    <h4 class="texto_claro">Inglés</h4>
+                    <p class="pie_texto">
+                        <a class="enlace_pie" href="tel:+164697787777">+1 (646) 977-87777</a>
+                    </p>
+                    <p class="pie_texto">
+                        <a class="enlace_pie" href="mailto:usersupport@iberostarhoteles.com">
+                            usersupport@iberostarhoteles.com
+                        </a>
+                    </p>
+                    <h4 class="texto_claro">Francés</h4>
+                    <p class="pie_texto">
+                        <a class="enlace_pie" href="tel:+330147437171">+33 01 47 43 71 71</a>
+                    </p>
+                    <p class="pie_texto">
+                        <a class="enlace_pie" href="mailto:serviceutilisateur@iberostarhoteles.com">
+                            serviceutilisateur@iberostarhoteles.com
+                        </a>
+                    </p>
+                </div>
+                <div id="pie_bloque_DRC">
+                    <h3 class="titulo_seccion">Redes sociales</h3>
+                    <p><a class="enlace_pie" href="https://www.facebook.com/IberostarES">
+                            Facebook
+                        </a></p>
+                    <p><a class="enlace_pie" href="https://twitter.com/iberostar">
+                            Twitter
+                        </a></p>
+                    <p><a class="enlace_pie" href="https://www.instagram.com/iberostar/">
+                            Instagram
+                        </a></p>
+        
+                    <p><a class="enlace_pie" href="https://www.iberostar.com/inspiration-guide/">
+                            Inspiration Guide
+                        </a></p>
+                    <p><a class="enlace_pie" href="https://www.youtube.com/iberostar">
+                            Youtube
+                        </a></p>
+                    <p><a class="enlace_pie"
+                            href="https://www.linkedin.com/company/iberostar-group/?original_referer=https%3A%2F%2Fwww.iberostar.com%2F">
+                            LinkedIn
+                        </a></p>
+                </div>
+            </div>
+            <div id="logo_pie_pagina">
+                <img src="../logos/png/logoCompleto_oscuro_sinFondo.png"
+                    alt="Logo junto con el nombre de la compañía y el subtítulo 'Hoteles'">
+                <p class="texto_registrado">
+                    2023 &copy; Copyright by Iberostar Hoteles S.A. Todos los
+                    derechos reservados
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

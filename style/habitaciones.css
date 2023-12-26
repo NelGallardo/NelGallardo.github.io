@@ -1,0 +1,107 @@
+/* *************************** */
+/*      habitaciones.html      */
+/* *************************** */
+
+/*
+    Estilos para los elementos que se encuentran en la página de las habitaciones
+*/
+
+ul {
+    padding-left: 1rem;
+}
+
+.columna {
+    width: 20%;
+    max-width: 25rem;
+    min-width: 20rem;
+
+    margin: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.tarjetaHabitacion {
+    background-color: #D0D0D0;
+
+    min-height: 30rem;
+    height: fit-content;
+}
+
+.tarjetaInfoHabitacion {
+    background-color: #E4E4E4;
+    margin-top: 3rem;
+    min-height: 23rem;
+    height: auto;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+.img_hab {
+    width: 100%;
+    height: 20rem;
+}
+
+.encabezadoTipoHab {
+    padding-left: 1rem;
+}
+
+.encabezadoInfoHabitacion {
+    margin-bottom: 0rem;
+}
+
+.texto_tarjeta {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.detalleInformacion {
+    font-family: 'Keystone', sans-serif;
+    color: black;
+}
+
+.columnaIzq {
+    align-items: flex-start;
+    text-align: right;
+    padding-right: 0.5rem;
+
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.columnaDrch {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+#hab_main {
+    display: flex;
+
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#suite {
+    background-image: url('..\\img\\central-park-view-suite.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#habitacion {
+    background-image: url('..\\img\\hotel-arts-barcelona-041.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#check {
+    background-image: url('..\\img\\bg-single-1-118.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

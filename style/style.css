@@ -1,0 +1,293 @@
+/*
+    Estilos para los elementos que sean comunes a todas las páginas de la web
+
+    Colores de la marca:
+        #000000
+        #152929
+        #3C7575
+        #5CB5B5
+        #D0D0D0
+        #E4E4E4
+        #FFFFFF
+*/
+
+/* ******************** */
+/*        Cuerpo        */
+/* ******************** */
+body {
+    width: auto;
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ******************** */
+/*        Texto         */
+/* ******************** */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Keystone', sans-serif;
+    color: black;
+}
+
+.texto_claro {
+    color: white;
+}
+
+/* **************************** */
+/*   Barra navegación (común)   */
+/* **************************** */
+
+.navegador {
+    font-family: 'Keystone', sans-serif;
+    font-style: normal;
+    font-size: larger;
+
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 3rem;
+
+    background-color: #152929;
+}
+
+/* Texto para los enlaces */
+.cabecera_enlace {
+    text-decoration: none;
+
+    font-size: larger;
+
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+
+    color: white;
+}
+
+.cabecera_enlace:hover {
+    color: #D0D0D0;
+    transition-duration: 0.25s;
+}
+
+.cabecera_enlace_actual {
+    text-decoration: none;
+
+    font-size: larger;
+
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    
+    color: #D0D0D0;
+}
+
+/* *************************** */
+/*   Barra navegación grande   */
+/* *************************** */
+
+/* Donde se encuentran los enlaces */
+#barra_navegador {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logoPequeño {
+    display: none;
+}
+
+#bloque_enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+    width: max-content;
+}
+
+/* **************************** */
+/*   Barra navegación pequeña   */
+/* **************************** */
+
+#barra_navegador_2 {
+    display: none;
+}
+
+/* Para centrar la imagen y el menú en la barra del navegador */
+#cajon {
+    width: fit-content;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#enlaceImg {
+    display: flex;
+    justify-content: center;
+}
+
+#logoPequeño2 {
+    width: 6rem;
+    margin: auto;
+}
+
+#menu_enlaces {
+    display: block;
+    text-align: center;
+    
+    width: fit-content;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu {
+    background-color: #152929;
+    width:  fit-content;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle:checked + #menu {
+    max-height: 300px;
+} 
+
+/* ******************** */
+/*     Pie de página    */
+/* ******************** */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    
+    background-color: #152929;
+}
+
+.titulo_seccion {
+    width: fit-content;
+    border-bottom: 0.1rem solid;
+    border-color: white;
+    color: white;
+}
+
+/* Texto del pie de página */
+.pie_texto {
+    color: white;
+    margin-top: -1rem;
+}
+
+.enlace_pie {
+    color: white;
+    text-decoration: none;
+}
+
+.enlace_pie:hover {
+    color: #D0D0D0
+}
+
+/* Texto de debajo del logo */
+.texto_registrado {
+    font-size: smaller;
+    text-align: center;
+    color: white;
+}
+
+#pie_bloqueEnlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+#pie_bloque_IZQ {
+    width: 35%;
+    margin-right: 2rem;
+}
+
+#pie_bloque_CNT {
+    margin-right: 2rem;
+}
+
+#logo_pie_pagina {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5rem;
+    padding-right: 2rem;
+}
+
+/* ******************* */
+/*     Media querys    */
+/* ******************* */
+
+@media (max-width: 1300px) {
+    #logoGrande {
+        display: none;
+    }
+
+    #logoPequeño {
+        display: block;
+        width: 49%;
+    }
+}
+
+@media (max-width: 1092px) {
+    
+    label {
+        color: white;
+        cursor: pointer;
+
+        height: 20px;
+        width: fit-content;
+        display: inline-block;
+    }
+
+    li {
+        margin-top: 1rem;
+    }
+
+    .cabeceraMenu {
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: xx-large;
+
+        border-bottom: 0.1rem solid;
+        border-color: white;
+        color: white;
+    }
+
+    .cabecera_enlace {
+        margin: auto;
+    }
+
+    #barra_navegador {
+        display: none;
+    }
+
+    #barra_navegador_2 {
+        display: block;
+        transition: ease all .5s;
+    }   
+
+    #pie_bloqueEnlaces {
+        width: max-content;
+    }
+}

@@ -1,0 +1,30 @@
+selección de colores:
+	- #95FFF4
+	- #00FFFF
+	- #49ead9
+	
+	Complementarios
+	- #FFA57A
+	- #FFCF87
+	
+	Tonos
+	- #25403D
+
+152929	3C7575	5CB5B5
+
+LOGO:
+	NOMBRE MARCA 	: Plus Jakarta Sans
+		SEPARACION : 6.61 px
+		ESTILO : light
+	SUBMARCA	: Plus Jakarta Sans
+		SEPARACION : 2 px
+		ESTILO 	: ultra-light
+	
+	CLARO 	: NEGRO puro con fondo blanco
+	OSCURO 	: BLANCO puro con fondo color #152929ff en RGBA o #152929 en HTML
+
+TEXTO PLANO PAGINA: 		Work Sans
+TEXTO ALGUNOS ENCABEZADOS: 	Keystone Bold
+
+
+https://ilet.mx/que-es-la-psicologia-del-color-y-cual-es-su-significado/

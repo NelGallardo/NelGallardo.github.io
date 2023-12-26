@@ -1,0 +1,119 @@
+/* ********************** */
+/*      reserva.html      */
+/* ********************** */
+
+/*
+    Estilos para los elementos que se encuentran en la página para las reservas
+*/
+
+body {
+    background-color: #152929;
+}
+
+label { 
+    display: none;
+}
+
+.tarjeta {
+    width: fit-content;
+
+    margin: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    padding: 1rem;
+    padding-top: 0.5rem;
+
+    background-color: #D0D0D0;
+}
+
+.cabeceraSeccion {
+    width: fit-content;
+    border-bottom: 0.1rem solid;
+}
+
+.campo {
+    font-family: 'Keystone', sans-serif;
+    text-align: left;
+    font-size: large;
+
+    width: 10rem;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cajaDatos {
+    font-family: 'Work Sans', sans-serif;
+
+    width: 15rem;
+    height: auto;
+
+    background-color: white;
+}
+
+.columnaPrecio {
+    width: fit-content;
+}
+
+#reserva_main {
+    height: fit-content;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    
+    background-color: white;
+}
+
+/* Contenedor para centrar los elementos */
+#cajon_main {
+    width: fit-content;
+    height: fit-content;
+}
+
+#reserva_seccionDatos {
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#seccionFondo_precio {
+    width: fit-content;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+}
+
+#cabeceraPrecio {
+    margin: 0rem;
+}
+
+#precio {
+    margin: 0rem;
+    margin-top: 0.5rem;
+    font-size: xx-large;
+}
+
+#botonConfirmar {
+    font-family: 'Work Sans', sans-serif;
+    font-size: x-large;
+
+    text-align: center;
+
+    color: white;
+    background-color: #152929;
+
+    width: 12rem;
+    height: 4rem;
+}
+
+#botonConfirmar:hover {
+    color:#5CB5B5;
+    transition-duration: 0.2s;
+}
